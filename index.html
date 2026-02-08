@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGAR | Logística y Abasto Social</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1f2933;
+      background-color: #f5f7fa;
+    }
+    header {
+      background: linear-gradient(135deg, #0f4c75, #3282b8);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 1rem auto 0;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f4c75;
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+    .highlight {
+      background: #e8f1f8;
+      border-left: 6px solid #3282b8;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    footer {
+      background: #0f4c75;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 0.3rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LOGAR</h1>
+  <p>Modelo de Logística y Abasto Social inspirado en DICONSA, enfocado en garantizar el acceso justo y constante a la canasta básica en comunidades rurales de México.</p>
+</header>
+
+<section>
+  <h2>Modelo de Negocio Inclusivo</h2>
+  <p>La red de tiendas LOGAR está dedicada a garantizar el acceso físico y económico a productos de la canasta básica y alimentos de alto valor nutrimental, especialmente en zonas de alta marginación.</p>
+</section>
+
+<section>
+  <h2>Datos de Interés</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>67%</h3>
+      <p>De la población rural presenta algún grado de inseguridad alimentaria.</p>
+    </div>
+    <div class="card">
+      <h3>Acceso limitado</h3>
+      <p>Dificultades constantes para adquirir productos básicos de manera regular.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Definición del Problema</h2>
+  <div class="highlight">
+    <p>Las comunidades marginadas enfrentan desabasto sistemático debido a altos costos logísticos, múltiples intermediarios y falta de infraestructura comercial, lo que eleva precios y limita el acceso a alimentos esenciales y nutritivos.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Tipos de Modelo</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Transferencia Directa</h3>
+      <p>Entrega gratuita o subsidiada de despensas como respuesta inmediata ante crisis humanitarias y pobreza extrema.</p>
+    </div>
+    <div class="card">
+      <h3>Tiendas LOGAR</h3>
+      <p>Red de tiendas que eliminan intermediarios y garantizan precios justos y disponibilidad constante.</p>
+    </div>
+    <div class="card">
+      <h3>Autoconsumo</h3>
+      <p>Huertos familiares y producción local para fortalecer la soberanía alimentaria y la sostenibilidad.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Promesa de Valor</h2>
+  <div class="highlight">
+    <p>Garantizar acceso constante, justo y cercano a alimentos básicos, fortaleciendo economías locales y reduciendo la inseguridad alimentaria.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Grupo Objetivo</h2>
+  <ul>
+    <li>Agricultores de pequeña escala y productores de traspatio.</li>
+    <li>Familias rurales en zonas con difícil acceso comercial.</li>
+    <li>Consumidores urbanos que buscan productos orgánicos y artesanales.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Modelo de Ingresos</h2>
+  <p>El modelo LOGAR permite esquemas de pago flexibles, intercambio de productos, pagos quincenales y liquidez proveniente del consumo urbano, manteniendo la sostenibilidad financiera con enfoque social.</p>
+</section>
+
+<section>
+  <h2>Escalabilidad</h2>
+  <ul>
+    <li>Replicación del modelo en otras comunidades rurales.</li>
+    <li>Integración progresiva de productores locales.</li>
+    <li>Economías de escala en logística y distribución.</li>
+  </ul>
+</section>
+
+<section aria-labelledby="products-section">
+  <h2 id="products-section">Productos de la Canasta Básica</h2>
+  <p>Selecciona los productos que necesitas y agrégalos a tu carrito. Al finalizar podrás elegir si deseas recogerlos en sucursal o recibirlos a domicilio.</p>
+
+  <div class="grid" id="product-list">
+    <div class="card">
+      <h3>Frijol</h3>
+      <p>Grano básico de alto valor nutrimental.</p>
+      <button onclick="addToCart('Frijol')">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <h3>Maíz</h3>
+      <p>Base de la alimentación tradicional mexicana.</p>
+      <button onclick="addToCart('Maíz')">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <h3>Arroz</h3>
+      <p>Fuente accesible de energía para las familias.</p>
+      <button onclick="addToCart('Arroz')">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <h3>Frutas y Verduras</h3>
+      <p>Productos frescos de productores locales.</p>
+      <button onclick="addToCart('Frutas y Verduras')">Agregar al carrito</button>
+    </div>
+    <div class="card">
+      <h3>Productos Embotellados</h3>
+      <p>Salsas, conservas y otros productos básicos.</p>
+      <button onclick="addToCart('Productos Embotellados')">Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="cart-section">
+  <h2 id="cart-section">Carrito de Compras</h2>
+  <ul id="cart"></ul>
+
+  <h3>Tipo de Entrega</h3>
+  <label>
+    <input type="radio" name="delivery" value="Sucursal" checked />
+    Recoger en sucursal LOGAR
+  </label><br />
+  <label>
+    <input type="radio" name="delivery" value="Domicilio" />
+    Entrega a domicilio
+  </label>
+
+  <p><strong>Nota:</strong> La modalidad de entrega se adapta a las condiciones logísticas de cada comunidad.</p>
+</section>
+
+<script>
+  const cart = [];
+  const cartElement = document.getElementById('cart');
+
+  function addToCart(product) {
+    cart.push(product);
+    renderCart();
+  }
+
+  function renderCart() {
+    cartElement.innerHTML = '';
+    cart.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.textContent = `${index + 1}. ${item}`;
+      cartElement.appendChild(li);
+    });
+  }
+</script>
+
+<footer>
+  <p><strong>Proyecto LOGAR</strong></p>
+  <p>Grupo 11 · Diseñar para compartir</p>
+  <p>Fuentes: CONEVAL, FAO, SEGALMEX</p>
+</footer>
+
+</body>
+</html>
